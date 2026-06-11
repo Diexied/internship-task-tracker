@@ -6,9 +6,36 @@
 <style>
 body{
     font-family: Arial, sans-serif;
-    background-color:#f4f6f9;
+    background-color:#1e1e2f;
+    color:white;
     margin:40px;
 }
+
+.navbar{
+
+            background:#2a2a40;
+
+            padding:15px;
+
+            border-radius:12px;
+
+            margin-bottom:25px;
+
+            box-shadow:0 2px 10px rgba(0,0,0,0.3);
+
+        }
+
+        .navbar a{
+
+            margin-right:20px;
+
+            text-decoration:none;
+
+            color:#66a3ff;
+
+            font-weight:bold;
+
+        }
 
 h1{
     color:#2c6fd6;
@@ -55,25 +82,31 @@ button:hover{
 
 <body>
 
-    <hr>
-
-<a href="/">Home</a> |
-<a href="/add-task/">Add Task</a> |
-<a href="/view-tasks/">View Tasks</a> |
-<a href="/about/">About</a>
-
-<hr>
+    <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/add-task/">Add Task</a>
+    <a href="/view-tasks/">View Tasks</a>
+    <a href="/about/">About</a>
+</div>
 
 <h1>About TaskFlow Manager</h1>
 
-<p>This project was created using Django and SQLite.</p>
+<p>
+TaskFlow Manager is a web-based task management system developed using Django and SQLite.
+</p>
 
-<p>Features:</p>
+<p>
+It helps users create, organize and monitor tasks efficiently through an intuitive interface.
+</p>
+
+<h3>Features</h3>
 
 <ul>
-    <li>Add Tasks</li>
-    <li>View Tasks</li>
-    <li>Store Tasks in Database</li>
+    <li>📋 Add New Tasks</li>
+    <li>📊 View All Tasks</li>
+    <li>⚡ Track Task Priority</li>
+    <li>✅ Monitor Task Status</li>
+    <li>💾 Store Data Using SQLite Database</li>
 </ul>
 
 <a href="/">Back Home</a>
