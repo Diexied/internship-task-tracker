@@ -5,7 +5,20 @@ from .models import Task
 # Create your views here.
 
 def home(request):
-    return render(request, 'home.html')
+
+    total_tasks = Task.objects.count()
+
+    pending_tasks = Task.objects.filter(status="Pending").count()
+
+    completed_tasks = Task.objects.filter(status="Completed").count()
+
+    context = {
+        'total_tasks': total_tasks,
+        'pending_tasks': pending_tasks,
+        'completed_tasks': completed_tasks
+    }
+
+    return render(request, 'home.html', context)
 
 def add_task(request):
 
