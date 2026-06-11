@@ -3,6 +3,83 @@
 <head>
     <title>Add Task</title>
     <style>
+        body{
+
+    font-family: Arial, sans-serif;
+
+    background-color:#f4f6f9;
+
+    margin:40px;
+
+}
+
+h1{
+
+    color:#2c6fd6;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:#2c6fd6;
+
+    font-weight:bold;
+
+}
+
+a:hover{
+
+    color:#174a9c;
+
+}
+
+form{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    width:400px;
+
+}
+
+input, textarea{
+
+    width:100%;
+
+    padding:8px;
+
+    margin-top:5px;
+
+    margin-bottom:15px;
+
+}
+
+button{
+
+    background:#2c6fd6;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#174a9c;
+
+}
 body{
     font-family: Arial;
     margin: 40px;
@@ -42,10 +119,18 @@ a{
     <textarea name="description"></textarea><br><br>
 
     <label>Priority:</label><br>
-    <input type="text" name="priority"><br><br>
+    <select name="priority">
+    <option>High</option>
+    <option>Medium</option>
+    <option>Low</option>
+</select><br><br>
 
     <label>Status:</label><br>
-    <input type="text" name="status"><br><br>
+    <select name="status">
+    <option>Pending</option>
+    <option>Ongoing</option>
+    <option>Completed</option>
+</select><br><br>
 
     <button type="submit">Submit</button>
 </form>
